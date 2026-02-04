@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/Logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>OSIRIS</title>
+</head>
+
+
+<body>
+    <!-- Navbar/////////////////////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blackish fixed-top">
+        <div class="container-fluid">
+            <img src="./img/Logo.png" class="rounded-circle" alt="" width="50" height="50">
+            <h1 class="text-brown-light border-end pe-3 borders mx-1">OSIRIS</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pyramids</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Pharaohs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Narmer</a></li>
+                            <li><a class="dropdown-item" href="#">Khufu</a></li>
+                            <li><a class="dropdown-item" href="#">Khafre</a></li>
+                            <li><a class="dropdown-item" href="#">Menkaure</a></li>
+                            <li><a class="dropdown-item" href="#">Akhenaten</a></li>
+                            <li><a class="dropdown-item" href="#">Tutankhamun</a></li>
+                            <li><a class="dropdown-item" href="#">Ramesses</a></li>
+                            <li><a class="dropdown-item" href="#">Horemheb</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hieroglyphics</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex gap-2">
+                    <input class="form-control" type="search" placeholder="Search">
+                    <button class="bg-solid-blackish" type="submit">Search</button>
+                    <button type="button" class="hover-outline-beige" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Model///////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="bg-solid-blackish w-100">
+                        Log in
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end Model///////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- background-slider//////////////////////////////////////////////////////////////////////////////////// -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/Background-1.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="icons position-fixed top-50 translate-middle-y end-0 d-flex flex-column gap-3 pe-1 z-3">
+                    <i class="fa-brands fa-facebook-f bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-twitter bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-whatsapp bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-instagram bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-youtube bg-solid-blackish fs-4 pointer-event "></i>
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <div class="ovarlay p-3 text-light">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="hover-outline-beige">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/background-2.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="icons position-fixed top-50 translate-middle-y end-0 d-flex flex-column gap-3 pe-1 z-3">
+                    <i class="fa-brands fa-facebook-f bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-twitter bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-whatsapp bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-instagram bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-youtube bg-solid-blackish fs-4 pointer-event "></i>
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <div class="ovarlay p-3 text-light">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="hover-outline-beige">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/background-3.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="icons position-fixed top-50 translate-middle-y end-0 d-flex flex-column gap-3 pe-1 z-3">
+                    <i class="fa-brands fa-facebook-f bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-twitter bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-whatsapp bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-instagram bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-youtube bg-solid-blackish fs-4 pointer-event "></i>
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <div class="ovarlay p-3 text-light">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="hover-outline-beige">Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/background-4 .jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="icons position-fixed top-50 translate-middle-y end-0 d-flex flex-column gap-3 pe-1 z-3">
+                    <i class="fa-brands fa-facebook-f bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-twitter bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-whatsapp bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-instagram bg-solid-blackish fs-4 pointer-event"></i>
+                    <i class="fa-brands fa-youtube bg-solid-blackish fs-4 pointer-event "></i>
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <div class="ovarlay p-3 text-light">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="hover-outline-beige">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev ms-5" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next me-5" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+    <!-- End background-slider ///////////////////////////////////////////////////////////////////////////// -->
+    <!-- Section-3 /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid Content p-3 h-auto">
+        <h1 class="text-brown-light ">wellcome</h1>
+        <p class="text-light ">Ancient Egyptian civilization is one of the oldest in history, emerging along the Nile
+            River over 7,000 years ago.
+            It is renowned for its remarkable achievements in architecture, writing, medicine, mathematics, astronomy,
+            and engineering.
+            The Egyptians developed hieroglyphic writing, built monumental structures like the pyramids and temples, and
+            left a lasting influence on art, culture, and religion that shaped future civilizations.
+            Their society was highly organized, with complex systems of governance, trade, and agriculture, all centered
+            around the life-giving Nile.
+            The civilization’s rich traditions, beliefs in the afterlife, and advancements in knowledge continue to
+            fascinate historians and inspire people around the world today..</p>
+        <button type="button" class="bg-solid-blackish">Primary</button>
+    </div>
+    <!-- End Section-3 /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-5">
+        <h1 class="text-center text-beige ">Famous tourist attractions</h1>
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+    <div class="accordion mt-4" id="accordionExample">
+        <div class="accordion-item ">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-blackish  text-beige shadow-none " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Giza Pyramids
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-brown-dark text-beige">
+                    <strong>The Giza Pyramids are one of the Seven Wonders of the Ancient World.</strong>
+                    They are located on the Giza Plateau near Cairo and include the Great Pyramid of Khufu, the Pyramid
+                    of Khafre, and the Pyramid of Menkaure. They are a symbol of ancient Egyptian civilization and
+                    attract millions of visitors every year.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-blackish  text-beige  shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Karnak Temple
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-brown-dark text-beige">
+                    <strong>Karnak Temple is the largest temple complex in ancient Egypt.</strong>
+                    It is located in Luxor and was built over centuries to honor the god Amun. Famous for its massive
+                    columns and detailed inscriptions, it is a major tourist attraction and a highlight of Egyptian
+                    history.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed bg-blackish  text-beige  shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Abu Simbel Temple
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-brown-dark text-beige">
+                    <strong>Abu Simbel Temple is one of Egypt's most famous temples.</strong>
+                    Located in southern Egypt near Aswan, it was built by Pharaoh Ramses II to commemorate his
+                    victories. The temple features huge statues overlooking the Nile and is a must-visit landmark for
+                    tourists worldwide.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////// -->
+    <hr>
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-4">
+        <h1 class="text-center text-brown-light ">Translation from Arabic to hieroglyphics</h1>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid Content-2 p-3 h-auto">
+        <h2 class="text-brown-light">Write And Translate <span class="mx-3 text-beige ">press Here</span></h2>
+        <!-- Button trigger modal -->
+        <div class="copy-wrapper position-relative d-inline-block">
+
+            <button type="button" class="bg-solid-blackish copy-btn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Copy
+            </button>
+
+            <span class="copied-text position-absolute top-50 start-100 translate-middle-y ms-2">
+                Copied ✔
+            </span>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-blackish">
+                    <div class="modal-header ">
+                        <h5 class="modal-title text-beige" id="staticBackdropLabel">Transelate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-light">
+                        To Message copid..
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="hover-outline-beige " data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                placeholder="Translate...."></textarea>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-4">
+        <h1 class="text-center text-brown-light ">Translation from Arabic to hieroglyphics</h1>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid Content-2 p-3 h-auto">
+        <h2 class="text-brown-light">Write And Translate <span class="mx-3 text-beige ">press Here</span></h2>
+        <!-- Button trigger modal -->
+        <div class="copy-wrapper position-relative d-inline-block">
+
+            <button type="button" class="bg-solid-blackish copy-btn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Copy
+            </button>
+
+            <span class="copied-text position-absolute top-50 start-100 translate-middle-y ms-2">
+                Copied ✔
+            </span>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-blackish">
+                    <div class="modal-header ">
+                        <h5 class="modal-title text-beige" id="staticBackdropLabel">Transelate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-light">
+                        To Message copid..
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="hover-outline-beige " data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                placeholder="Translate...."></textarea>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-4">
+        <h1 class="text-center text-brown-light ">Translation from Arabic to hieroglyphics</h1>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid Content-2 p-3 h-auto">
+        <h2 class="text-brown-light">Write And Translate <span class="mx-3 text-beige ">press Here</span></h2>
+        <!-- Button trigger modal -->
+        <div class="copy-wrapper position-relative d-inline-block">
+
+            <button type="button" class="bg-solid-blackish copy-btn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Copy
+            </button>
+
+            <span class="copied-text position-absolute top-50 start-100 translate-middle-y ms-2">
+                Copied ✔
+            </span>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-blackish">
+                    <div class="modal-header ">
+                        <h5 class="modal-title text-beige" id="staticBackdropLabel">Transelate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-light">
+                        To Message copid..
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="hover-outline-beige " data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                placeholder="Translate...."></textarea>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid p-0 bg-img">
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-4">
+        <h1 class="text-center text-brown-light ">..Key figures</h1>
+    </div>
+    <!-- start row-1////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- start row-1 -->
+    <div class="container m-auto my-5 d-flex gap-4 flex-wrap justify-content-center cards">
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card col-12 col-md-4" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Sphinx.jpg" class="img-fluid card-img-fixed rounded" alt="Sphinx">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Great Sphinx</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    The Great Sphinx of Giza is one of Egypt's most mysterious ancient monuments.
+                </p>
+            </div>
+        </div>
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Giza Pyramids.jpg" class="img-fluid card-img-fixed rounded" alt="Pyramids">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Giza Pyramids</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    The pyramids are among the greatest architectural achievements in history.
+                </p>
+            </div>
+        </div>
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Karnak Temple.jpg" class="img-fluid card-img-fixed rounded" alt="Karnak">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Karnak Temple</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    Karnak is a massive temple complex located in Luxor, Egypt.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End row-1 -->
+
+    <!-- start row-2 -->
+    <div class="container m-auto my-5 d-flex gap-4 flex-wrap justify-content-center cards">
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Abu Simbel.jpg" class="img-fluid card-img-fixed rounded" alt="Abu Simbel">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Abu Simbel</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    Abu Simbel temples were carved out of rock during the reign of Ramses II.
+                </p>
+            </div>
+        </div>
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Valley of the Kings.jpg" class="img-fluid card-img-fixed rounded" alt="Valley of Kings">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Valley of the Kings</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    This valley served as a burial ground for pharaohs of the New Kingdom.
+                </p>
+            </div>
+        </div>
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Luxor Temple.jpg" class="img-fluid card-img-fixed rounded" alt="Luxor Temple">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Luxor Temple</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    Luxor Temple was built to honor the rejuvenation of kingship.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End row-2 -->
+
+    <!-- start row-3 -->
+    <div class="container m-auto my-5 d-flex gap-4 flex-wrap justify-content-center cards">
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Egyptian Museum.jpg" class="img-fluid card-img-fixed rounded" alt="Egyptian Museum">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Egyptian Museum</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    The museum houses the world's largest collection of ancient Egyptian artifacts.
+                </p>
+            </div>
+        </div>
+
+        <div class="card shadow-soft bg-brown-dark text-beige After-card" style="width: 18rem;">
+            <div class="p-2">
+                <img src="./img/Cairo Citadel.jpg" class="img-fluid card-img-fixed rounded" alt="Citadel">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Cairo Citadel</h5>
+                <div class="d-flex my-2">
+                    <button type="button" class="bg-solid-blackish ms-auto">Show</button>
+                </div>
+                <p class="card-text">
+                    The Citadel of Cairo is a historic fortress overlooking the city.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End row-3 -->
+
+    <!--End Row-3 ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid p-0 bg-img">
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid bg-brown-dark p-4">
+        <h1 class="text-center text-brown-light ">..Historical governorates of Egypt</h1>
+    </div>
+    <!-- Start Historical governorates of Egypt //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container d-flex justify-content-center align-items-center flex-wrap gap-5 py-3">
+
+        <!-- Cairo -->
+        <div class="card position-relative text-white overflow-hidden raduse" style="width:18rem;height:300px;">
+            <img src="./img/Cairo.jpg" class="card-img h-100 object-fit-cover" alt="Cairo">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.4);"></div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-start p-3">
+                <h2 class="card-title">Cairo</h2>
+                <p class="card-text small">
+                    The Citadel, Islamic mosques, Khan El-Khalili.<br>
+                    Heart of ancient and modern Egypt.
+                </p>
+            </div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start p-3">
+                <img src="./img/CairoII.jpg" class="rounded-pill img-thumbnail"
+                    style="width:70px;height:90px;object-fit:cover;border:3px solid #fff;">
+                <h5 class="mt-2">Cairo</h5>
+            </div>
+        </div>
+
+        <!-- Giza -->
+        <div class="card position-relative text-white overflow-hidden raduse" style="width:18rem;height:300px;">
+            <img src="./img/Giza.jpg" class="card-img h-100 object-fit-cover" alt="Giza">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.4);"></div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-start p-3">
+                <h2 class="card-title">Giza</h2>
+                <p class="card-text small">
+                    The Great Pyramids & the Sphinx.<br>
+                    One of the Seven Wonders.
+                </p>
+            </div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                <img src="./img/GizaII.jpg" class="rounded-pill img-thumbnail"
+                    style="width:70px;height:90px;object-fit:cover;border:3px solid #fff;">
+                <h5 class="mt-2">Giza</h5>
+            </div>
+        </div>
+
+        <!-- Alexandria -->
+        <div class="card position-relative text-white overflow-hidden raduse" style="width:18rem;height:300px;">
+            <img src="./img/Alexandria.jpg" class="card-img h-100 object-fit-cover" alt="Alexandria">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.4);"></div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-start p-3">
+                <h2 class="card-title">Alexandria</h2>
+                <p class="card-text small">
+                    Founded by Alexander the Great.<br>
+                    Lighthouse & ancient library.
+                </p>
+            </div>
+
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                <img src="./img/AlexandriaII.jpg" class="rounded-pill img-thumbnail"
+                    style="width:70px;height:90px;object-fit:cover;border:3px solid #fff;">
+                <h5 class="mt-2">Alexandria</h5>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Historical governorates of Egypt /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--Start newly discovered  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+    <!-- Title -->
+    <div class="container-fluid mt-5 titel">
+        <h1 class="text-center text-brown-light mb-3">Exploring Egypt's Hidden Treasures</h1>
+    </div>
+    <!-- End Title -->
+
+    <!-- Carts -->
+    <div class="d-flex flex-column gap-5">
+
+        <!-- Cart one -->
+        <div class="card mx-auto trans rounded-0 col-12 col-md-11" style="max-width: 75%; margin-top: 50px;">
+            <div class="row g-0">
+
+                <div class="col-md-4 order-1 order-md-2 px-md-2">
+                    <div class="img-container">
+                        <img src="./img/Abu Simbel.jpg" class="img-fluid" alt="Abu Simbel">
+                    </div>
+                </div>
+
+                <div class="col-md-8 order-2 order-md-1">
+                    <div class="card-body">
+                        <h3 class="card-title">Abu Simbel Temples</h3>
+                        <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                        <div class="line"></div>
+                        <p class="card-text">
+                            The Abu Simbel temples are two massive rock temples in southern Egypt, built during the
+                            reign of Pharaoh Ramesses II in the 13th century BC. They were constructed to commemorate
+                            Ramesses II and his queen Nefertari, and to celebrate his victory at the Battle of Kadesh.
+                            The larger temple is dedicated to Ramesses himself, while the smaller one honors Nefertari
+                            and the goddess Hathor. In the 1960s, the temples were carefully relocated to prevent
+                            flooding from the creation of Lake Nasser, a remarkable feat of modern engineering.
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn ms-0 bg-beige" type="submit">
+                            <i class="fa-solid fa-podcast"></i> Podcast
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-regular fa-clock"></i> 50 mins
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-solid fa-play"></i> Play Episode
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Cart one -->
+
+        <!-- Cart two -->
+        <div class="card mx-auto trans image rounded-0 col-12 col-md-11" style="max-width: 75%;">
+            <div class="row g-0">
+                <div class="col-md-4 order-1 order-md-1 px-md-2">
+                    <div class="img-container">
+                        <img src="./img/Giza Pyramids.jpg" class="img-fluid" alt="Great Pyramid">
+                    </div>
+                </div>
+                <div class="col-md-8 order-2 order-md-2">
+                    <div class="card-body">
+                        <h3 class="card-title">Great Pyramid of Giza</h3>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        <div class="line"></div>
+                        <p class="card-text">
+                            The Great Pyramid of Giza, also known as the Pyramid of Khufu, is the largest of the three
+                            pyramids on the Giza plateau and one of the Seven Wonders of the Ancient World. Constructed
+                            over 20 years using millions of limestone blocks, it was originally 146.6 meters tall. The
+                            pyramid served as a tomb for Pharaoh Khufu and was designed to ensure his journey to the
+                            afterlife. Its precise alignment with the cardinal points and the remarkable engineering
+                            techniques used continue to fascinate archaeologists and engineers alike.
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn ms-0 bg-beige" type="submit">
+                            <i class="fa-solid fa-podcast"></i> Podcast
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-regular fa-clock"></i> 60 mins
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-solid fa-play"></i> Play Episode
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Cart two -->
+
+        <!-- Cart three -->
+        <div class="card mx-auto trans rounded-0 col-12 col-md-11" style="max-width: 75%;">
+            <div class="row g-0">
+
+                <div class="col-md-4 order-1 order-md-2 px-md-2">
+                    <div class="img-container">
+                        <img src="./img/Karnak Temple.jpg" class="img-fluid h-100" alt="Karnak Temple">
+                    </div>
+                </div>
+
+                <div class="col-md-8 order-2 order-md-1">
+                    <div class="card-body">
+                        <h3 class="card-title">Karnak Temple Complex</h3>
+                        <p class="card-text"><small class="text-muted">Last updated 1 hour ago</small></p>
+                        <div class="line"></div>
+                        <p class="card-text">
+                            The Karnak Temple Complex is one of the largest religious buildings ever constructed,
+                            located in Luxor. Dedicated primarily to Amun-Ra, the complex was built and expanded over
+                            2,000 years by multiple pharaohs. It features massive pylons, halls, obelisks, and
+                            sanctuaries, reflecting the grandeur of Egyptian architecture. The Hypostyle Hall, with its
+                            134 enormous columns, remains one of the most iconic sights of ancient Egyptian
+                            civilization, showcasing both religious and artistic achievement.
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn ms-0 bg-beige" type="submit">
+                            <i class="fa-solid fa-podcast"></i> Podcast
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-regular fa-clock"></i> 45 mins
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-solid fa-play"></i> Play Episode
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Cart three -->
+
+        <!-- Cart four -->
+        <div class="card mx-auto trans image rounded-0 col-12 col-md-11" style="max-width: 75%;">
+            <div class="row g-0">
+
+                <div class="col-md-4 order-1 order-md-1 px-md-1">
+                    <div class="img-container">
+                        <img src="./img/Valley of the Kings.jpg" class="img-fluid" alt="Valley of the Kings">
+                    </div>
+                </div>
+
+                <div class="col-md-8 order-2 order-md-2">
+                    <div class="card-body">
+                        <h3 class="card-title">Valley of the Kings</h3>
+                        <p class="card-text"><small class="text-muted">Last updated 2 hours ago</small></p>
+                        <div class="line"></div>
+                        <p class="card-text">
+                            The Valley of the Kings, located on the west bank of the Nile near Luxor, served as the
+                            royal burial ground for Pharaohs and powerful nobles of the New Kingdom. Over 60 tombs have
+                            been discovered, including that of Tutankhamun. Hidden in the cliffs, these tombs contain
+                            elaborate wall paintings, hieroglyphics, and treasures meant to accompany the deceased in
+                            the afterlife. The valley offers profound insight into ancient Egyptian beliefs, funerary
+                            practices, and artistic mastery.
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn ms-0 bg-beige" type="submit">
+                            <i class="fa-solid fa-podcast"></i> Podcast
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-regular fa-clock"></i> 55 mins
+                        </button>
+                        <button class="btn bg-beige" type="submit">
+                            <i class="fa-solid fa-play"></i> Play Episode
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Cart four -->
+
+    </div>
+    <!-- End Carts -->
+
+    <!--End newly discovered  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+    <!-- Social Media Aplication Logo////////////////////////////////////////////////////////// -->
+<div class="container my-5">
+    <div class="row justify-content-center align-items-center g-4 Social">
+
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card text-center shadow-lg border-0 p-4" style="width: 220px;">
+                <p class="text-secondary small text-uppercase mb-3">Subscribe Now</p>
+                <img src="./img/instagram.png" class="mx-auto mb-3" width="80" alt="Instagram">
+                <a href="#" class="btn btn-outline-dark btn-sm">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card text-center shadow-lg border-0 p-4" style="width: 220px;">
+                <p class="text-secondary small text-uppercase mb-3">Subscribe Now</p>
+                <img src="./img/whatsapp.png" class="mx-auto mb-3" width="80" alt="Whatsapp">
+                <a href="#" class="btn btn-outline-success btn-sm">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card text-center shadow-lg border-0 p-4" style="width: 220px;">
+                <p class="text-secondary small text-uppercase mb-3">Subscribe Now</p>
+                <img src="./img/linkedin.png" class="mx-auto mb-3" width="80" alt="LinkedIn">
+                <a href="#" class="btn btn-outline-primary btn-sm">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card text-center shadow-lg border-0 p-4" style="width: 220px;">
+                <p class="text-secondary small text-uppercase mb-3">Subscribe Now</p>
+                <img src="./img/youtube.png" class="mx-auto mb-3" width="80" alt="YouTube">
+                <a href="#" class="btn btn-outline-danger btn-sm">Go To Link</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!--End Social Media Aplication Logo////////////////////////////////////////////////////////// -->
+fo
+    <!-- Footer/////////////////////////////////////////////////////////////////////////////////////-->
+<footer class="bg-blackish text-beige pt-5">
+    <div class="container">
+
+        <!-- Civilization Images -->
+        <div class="row g-3 mb-4">
+
+            <div class="col-4">
+                <div class="heritage-box pyramids"></div>
+            </div>
+
+            <div class="col-4">
+                <div class="heritage-box temple"></div>
+            </div>
+
+            <div class="col-4">
+                <div class="heritage-box statue"></div>
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="row gy-4">
+
+            <div class="col-md-4">
+                <h5 class="mb-3">About Ancient Egypt</h5>
+                <p class="text-gray-green small">
+                    Exploring the legacy of ancient Egyptian civilization,
+                    monuments, temples, and archaeological discoveries.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="mb-3">Explore</h5>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <li><a href="#" class="text-gray-green text-decoration-none">Pharaonic Era</a></li>
+                    <li><a href="#" class="text-gray-green text-decoration-none">Temples & Tombs</a></li>
+                    <li><a href="#" class="text-gray-green text-decoration-none">Discoveries</a></li>
+                    <li><a href="#" class="text-gray-green text-decoration-none">Governorates</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="mb-3">Connect</h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="border border-brown-light rounded-circle d-flex align-items-center justify-content-center text-beige"
+                       style="width:38px;height:38px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="border border-brown-light rounded-circle d-flex align-items-center justify-content-center text-beige"
+                       style="width:38px;height:38px;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="border border-brown-light rounded-circle d-flex align-items-center justify-content-center text-beige"
+                       style="width:38px;height:38px;"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-top border-secondary mt-4 pt-3 text-center">
+            <p class="small text-gray-green mb-0">
+                © 2026 Ancient Egypt Heritage. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+    <!--End Footer/////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
